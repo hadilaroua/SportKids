@@ -1,30 +1,44 @@
 # SportKids
-📱 Sporty Kids – Application Mobile Android Frontend Android – Kotlin
+📱 **Sporty Kids – Solution Mobile Complète pour Académie Sportive (Android & iOS)**
 
-Sporty Kids est une application mobile développée en Kotlin sous Android Studio, permettant la gestion moderne et simplifiée d’une académie sportive. Elle offre des fonctionnalités dédiées au suivi des enfants, gestion des tournois, activités sportives et paiement.
+**Sporty Kids** est une solution mobile multiplateforme innovante conçue pour moderniser et simplifier la gestion quotidienne d'une académie sportive. Développée nativement pour **Android** (Kotlin sous Android Studio) et pensée pour s'intégrer harmonieusement avec l'écosystème **iOS**, l'application offre une expérience unifiée, fluide et sécurisée aux parents, aux entraîneurs et à l'administration, quel que soit l'appareil utilisé.
 
-Objectif de l’application
+Elle centralise en un seul endroit le suivi pédagogique des jeunes athlètes, la gestion interactive des tournois et des matchs, le catalogue des activités sportives ainsi que la gestion sécurisée des cotisations et des paiements en ligne.
 
-Faciliter la gestion quotidienne d’une académie sportive afin d’offrir une expérience fluide pour les entraîneurs, les enfants et l’administration.
+---
 
-Fonctionnalités principales
+### 🎯 Objectif de l’Application
 
-Gestion des tournois
-Création, affichage et mise à jour des tournois
-Gestion des participations
-Visualisation des détails du tournoi
-Suivi des enfants
-Communication fluide avec le coach
-Suivi de progression
-Activités associées
-Gestion des activités sportives
-Liste des activités proposées
-Attribution des enfants aux activités
-Gestion des paiements
-Paiement des activités
-Suivi de l’historique des transactions
-Interface moderne
+Faciliter l'organisation et le pilotage d’une académie sportive en proposant une plateforme mobile moderne et accessible sur **Android et iOS**, afin d'offrir une expérience intuitive et collaborative aux différents acteurs :
+- **Pour les Parents** : Suivre en temps réel l'évolution et l'assiduité de leurs enfants, recevoir les bilans d'entraînement, régler les cotisations et communiquer directement avec le staff technique.
+- **Pour les Entraîneurs** : Gérer les séances d'entraînement, noter les progrès techniques et physiques, composer les équipes et arbitrer les matchs en direct.
+- **Pour l'Administration** : Piloter les plannings, superviser les tournois et centraliser les adhésions en toute simplicité.
 
-Développée en Kotlin
-Architecture MVVM propre et organisée
-Navigation intuitive
+---
+
+### ✨ Fonctionnalités Principales
+
+- **🏆 Gestion des Tournois & Compétitions** :
+  - Création, planification et mise à jour en temps réel des tournois.
+  - Gestion des inscriptions, validation des équipes et des participants.
+  - Visualisation des détails de match et de l'arbre du tournoi (*bracket*).
+
+- **👶 Suivi & Évolution des Enfants** :
+  - Fiches individuelles détaillées et historique sportif.
+  - Évaluations pédagogiques régulières et suivi précis de la progression.
+  - Communication fluide et directe avec le coach référent.
+
+- **⚽ Gestion des Activités Sportives** :
+  - Catalogue complet des disciplines et séances d'entraînement proposées.
+  - Attribution personnalisée des enfants aux groupes et créneaux horaires adaptés.
+  - Suivi des présences et gestion des plannings hebdomadaires.
+
+- **💳 Gestion des Paiements & Abonnements** :
+  - Paiement sécurisé et dématérialisé des activités et des stages.
+  - Suivi transparent de l'historique des transactions et génération de reçus numériques.
+  - Gestion automatique des renouvellements de cotisations.
+
+- **📱 Interface Moderne & Ergonomique** :
+  - **Excellence Mobile Native** : Conçue pour offrir des performances optimales et une réactivité maximale sur Android et iOS.
+  - **Architecture MVVM** propre, modulaire, maintenable et découplée.
+  - **Navigation Intuitive** : Expérience utilisateur soignée, fluide et pensée pour un usage quotidien sans friction.
