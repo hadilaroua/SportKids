@@ -1,201 +1,306 @@
-# SportKids
-> 📱 **Sporty Kids – Application Mobile Android Frontend (Kotlin / Jetpack Compose)**
+# 📱 SportKids — Sporty Kids
 
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-purple.svg?style=flat&logo=kotlin)](https://kotlinlang.org)
-[![Android SDK](https://img.shields.io/badge/Android%20SDK-24%20--%2034-brightgreen.svg?style=flat&logo=android)](https://developer.android.com)
-[![Jetpack Compose](https://img.shields.io/badge/UI-Jetpack%20Compose%20%2F%20Material%203-blue.svg?style=flat&logo=jetpackcompose)](https://developer.android.com/jetpack/compose)
-[![Architecture](https://img.shields.io/badge/Architecture-MVVM%20Clean%20Code-orange.svg?style=flat)](#architecture)
-[![Stripe](https://img.shields.io/badge/Payment-Stripe%20SDK-635bff.svg?style=flat&logo=stripe)](https://stripe.com)
-[![Firebase](https://img.shields.io/badge/Cloud-Firebase-ffca28.svg?style=flat&logo=firebase)](https://firebase.google.com)
-[![Gemini](https://img.shields.io/badge/AI-Google%20Gemini%20SDK-8e75ff.svg?style=flat&logo=googlegemini)](https://ai.google.dev)
+<p align="center">
+  <img src="app/src/main/res/drawable/logo1.png" alt="SportKids Logo" width="140" style="border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</p>
 
-**Sporty Kids** est une application mobile native développée en **Kotlin** sous **Android Studio**, dédiée à la gestion moderne, centralisée et simplifiée d’une académie sportive pour enfants. 
+<h3 align="center">Plateforme Mobile Intelligente de Gestion d'Académie Sportive pour Enfants</h3>
 
-Elle offre une expérience utilisateur fluide et intuitive pour les différents acteurs de l'académie : **parents, enfants, entraîneurs et administrateurs**, en intégrant le suivi d'entraînement, la gestion des tournois, le paiement en ligne sécurisé et l'assistance intelligente par IA.
+<p align="center">
+  Application Android native développée en <b>Kotlin</b> avec <b>Jetpack Compose</b> et l'architecture moderne <b>MVVM</b>.
+</p>
+
+<p align="center">
+  <a href="https://kotlinlang.org"><img src="https://img.shields.io/badge/Kotlin-2.0.21-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" /></a>
+  <a href="https://developer.android.com/jetpack/compose"><img src="https://img.shields.io/badge/UI-Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose" /></a>
+  <a href="https://m3.material.io/"><img src="https://img.shields.io/badge/Design-Material%203-00897B?style=for-the-badge&logo=materialdesign&logoColor=white" alt="Material 3" /></a>
+  <a href="https://ai.google.dev/"><img src="https://img.shields.io/badge/AI-Google%20Gemini-8E75FF?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini AI" /></a>
+  <a href="https://stripe.com"><img src="https://img.shields.io/badge/Payments-Stripe%20SDK-635BFF?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" /></a>
+  <a href="https://firebase.google.com"><img src="https://img.shields.io/badge/Cloud-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" /></a>
+</p>
+
+---
+
+## 🌟 Présentation Générale
+
+**Sporty Kids** est une application mobile Android de dernière génération conçue pour moderniser et simplifier la gestion quotidienne d'une académie sportive. 
+
+Elle connecte harmonieusement les **parents**, les **entraîneurs (coachs)** et l'**administration** en offrant une expérience interactive, réactive et sécurisée. De l'inscription aux entraînements jusqu'au suivi des compétitions et au paiement en ligne, l'application intègre également des technologies de pointe telles que l'**Intelligence Artificielle générative Google Gemini**, les **appels audio/vidéo intégrés**, et la **génération automatique de bilans PDF**.
 
 ---
 
 ## 🎯 Objectif de l'Application
 
-Faciliter la gestion quotidienne et l'organisation globale d'une académie sportive grâce à une plateforme mobile complète permettant :
-- Une administration dématérialisée et sans friction des inscriptions et cotisations.
-- Un accompagnement pédagogique et sportif rigoureux de chaque enfant.
-- Une communication fluide et instantanée entre les coachs et les parents.
-- Une visibilité en temps réel sur les plannings, les tournois et les événements sportifs.
+Faciliter la gestion globale d’une académie sportive afin d’offrir une expérience fluide, collaborative et transparente :
+- **Pour les Parents** : Suivre en temps réel l'évolution sportive et pédagogique de leurs enfants, gérer les inscriptions, payer en toute sécurité et communiquer directement avec les coachs.
+- **Pour les Entraîneurs** : Évaluer les séances, noter la progression physique et motrice, générer des synthèses d'entraînement assistées par IA et gérer les feuilles de match.
+- **Pour l'Administration** : Piloter les tournois, planifier les plannings et centraliser les flux financiers sans friction.
 
 ---
 
-## ✨ Fonctionnalités Principales
-
-### 🏆 Gestion des Tournois & Compétitions
-- **Création et Programmation** : Organisation des tournois, définition des catégories d'âge, règles et dates de match.
-- **Affichage Dynamique** : Consultation des tournois à venir, en cours et terminés avec filtres par discipline sportive.
-- **Gestion des Participations** : Inscription des enfants, validation des listes d'équipes et des compositions.
-- **Détails & Suivi en Direct** : Scores, classements, statistiques de match et calendriers des rencontres.
-
-### 👶 Suivi Pédagogique & Profils Enfants
-- **Fiches Enfants Détaillées** : Informations personnelles, historique médical/sportif, catégorie et progression.
-- **Suivi des Performances** : Évaluation des compétences motrices et techniques acquises, présences aux entraînements.
-- **Communication avec le Coach** : Échanges directs, retours individualisés et consignes spécifiques d'entraînement.
-- **Attribution aux Activités** : Affectation personnalisée de chaque enfant aux groupes et disciplines adaptés.
-
-### ⚽ Gestion des Activités Sportives & Entraînements
-- **Catalogue des Activités** : Liste complète des disciplines proposées (Football, Basketball, Natation, Tennis, Gymnastique, etc.).
-- **Plannings Hebdomadaires** : Horaires des séances, terrains assignés et coachs référents.
-- **Gestion des Disponibilités & Présences** : Pointage numérique en début de séance par les entraîneurs.
-
-### 💳 Paiements & Abonnements Sécurisés
-- **Paiement In-App (Stripe)** : Règlement sécurisé des cotisations, stages et activités via carte bancaire.
-- **Historique des Transactions** : Suivi transparent de tous les paiements effectués avec reçus numériques.
-- **Gestion des Forfaits & Abonnements** : Alertes automatiques de renouvellement et suivi du statut des paiements.
-
-### 💬 Communication & Notifications Temps Réel
-- **Messagerie & Chat** : Messagerie instantanée intégrée via WebSockets / Socket.IO pour les échanges coachs-parents.
-- **Notifications Push (Firebase Cloud Messaging)** : Alertes instantanées pour les annonces importantes, changements d'horaire ou rappels de tournoi.
-
-### 🤖 Assistant Intelligent (Google Gemini AI)
-- **Conseils Personnalisés** : Suggestions d'exercices, d'échauffements et de plans nutritionnels adaptés aux enfants grâce au SDK Gemini.
-- **Support Interactif** : Assistant conversationnel capable de répondre aux questions courantes sur l'académie et la pratique sportive.
-
-### 🗺️ Géolocalisation & Cartes (OSMDroid)
-- **Localisation des Terrains & Événements** : Affichage interactif OpenStreetMap des infrastructures sportives et lieux de compétition.
-
-### 📲 Widget Écran d'Accueil (Jetpack Glance)
-- **Accès Rapide** : Widget Android Material 3 affichant directement sur l'écran d'accueil les prochains entraînements et alertes urgentes.
-
----
-
-## 🏗️ Architecture Logicielle
-
-L'application repose sur le pattern architectural **MVVM (Model - View - ViewModel)** conforme aux recommandations officielles de Google (Android Architecture Components) et respectant les principes du Clean Architecture :
+## 👥 Espaces Utilisateurs & Rôles
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                       UI LAYER                              │
-│  - Jetpack Compose Screens & Reusable Components            │
-│  - Material 3 Design System & Theme                         │
-│  - Navigation Compose                                       │
-└──────────────────────────────┬──────────────────────────────┘
-                               │ Observes UI State (StateFlow)
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    VIEWMODEL LAYER                          │
-│  - TournamentsViewModel, ActivitiesViewModel                │
-│  - AuthViewModel, PaymentViewModel, ChildrenViewModel       │
-│  - Coroutines & CoroutineScope management                   │
-└──────────────────────────────┬──────────────────────────────┘
-                               │ Calls methods
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│                   REPOSITORY LAYER                          │
-│  - TournamentsRepository, PaymentRepository, UserRepository │
-│  - Abstraction de la source de données                      │
-└──────────────┬──────────────────────────────┬───────────────┘
-               │                              │
-               ▼                              ▼
-┌──────────────────────────────┐ ┌────────────────────────────┐
-│      NETWORK (REMOTE)        │ │        LOCAL DATA          │
-│  - Retrofit / OkHttp Client  │ │  - DataStore Preferences   │
-│  - Socket.IO (Realtime)      │ │  - Token & Session Cache   │
-│  - Firebase Auth / FCM       │ │  - Offline State Cache     │
-└──────────────────────────────┘ └────────────────────────────┘
+                       ┌───────────────────────────────┐
+                       │     Sporty Kids Ecosystème    │
+                       └──────────────┬────────────────┘
+                                      │
+         ┌────────────────────────────┼────────────────────────────┐
+         │                            │                            │
+         ▼                            ▼                            ▼
+┌──────────────────┐        ┌──────────────────┐        ┌──────────────────┐
+│   ESPACE PARENT  │        │   ESPACE COACH   │        │   ADMINISTRATION │
+├──────────────────┤        ├──────────────────┤        ├──────────────────┤
+│• Profil Enfants  │        │• Évaluation      │        │• Gestion Tournois│
+│• Suivi progrès   │        │• Synthèse Gemini │        │• Brackets/Matchs │
+│• Inscriptions    │        │• Feuilles Matchs │        │• Activités       │
+│• Paiement Stripe │        │• Chat & Appels   │        │• Programmes      │
+│• Reçus & Bilans  │        │• Envoi Bilans PDF│        │• Vue Globale     │
+└──────────────────┘        └──────────────────┘        └──────────────────┘
 ```
 
 ---
 
-## 🛠️ Stack Technique
+## 🚀 Fonctionnalités Clés Détaillées
 
-| Domaine | Technologie / Bibliothèque | Description |
-|---|---|---|
-| **Langage** | [Kotlin 2.0.21](https://kotlinlang.org/) | Langage moderne, concis et sécurisé |
-| **Framework UI** | [Jetpack Compose (BOM 2024.10)](https://developer.android.com/jetpack/compose) | Interface déclarative réactive |
-| **Design System** | [Material 3](https://m3.material.io/) | Composants modernes et charte graphique dynamique |
-| **Navigation** | [Navigation Compose 2.7.7](https://developer.android.com/guide/navigation) | Gestion du graphe de navigation Compose |
-| **Asynchronisme** | [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) & Flow | Gestion asynchrone non-bloquante |
-| **Réseau HTTP** | [Retrofit 2.9.0](https://square.github.io/retrofit/) + [OkHttp 4.12.0](https://square.github.io/okhttp/) | Consommation des API REST avec Logging Interceptor |
-| **Sérialisation** | [Gson 2.11.0](https://github.com/google/gson) | Conversion JSON ↔ Modèles Kotlin |
-| **Temps Réel** | [Socket.IO Client 2.0.1](https://socket.io/) | Communication bidirectionnelle en temps réel |
-| **Paiement** | [Stripe Android SDK 21.5.0](https://stripe.com/docs/android) | Paiements par carte et composants sécurisés |
-| **Intelligence Artificielle** | [Google Generative AI SDK 0.9.0](https://ai.google.dev/) | Intégration Gemini pour conseils sportifs |
-| **Services Cloud** | [Firebase BOM 32.7.0](https://firebase.google.com/) | Auth, Cloud Messaging (FCM), Firestore |
-| **Cartographie** | [OSMDroid 6.1.16](https://github.com/osmdroid/osmdroid) | Affichage de cartes OpenStreetMap libres |
-| **Chargement d'Images** | [Coil Compose 2.6.0](https://coil-kt.github.io/coil/compose/) | Chargement et mise en cache asynchrone des médias |
-| **Widgets** | [Jetpack Glance Material 3](https://developer.android.com/jetpack/compose/glance) | Widgets Android pour l'écran d'accueil |
-| **Stockage Local** | [DataStore Preferences 1.0.0](https://developer.android.com/topic/libraries/architecture/datastore) | Stockage sécurisé des clés et sessions utilisateur |
+### 🏆 1. Gestion des Tournois & Compétitions
+- **Création et Programmation** : Configuration des tournois (nom, discipline, tranches d'âge, règles, dates et lieux).
+- **Arbre de Tournoi Dynamique (Bracket)** : Visualisation interactive de l'arbre d'élimination directe (quarts, demies, finale) accessible aux parents et coachs.
+- **Gestion des Équipes & Inscriptions** : Composition des effectifs, attribution des capitaines et validation des listes de participants.
+- **Feuille de Match en Temps Réel** : Arbitrage numérique, mise à jour des scores en direct, statut des rencontres et génération automatique des classements.
+
+### 👶 2. Suivi Pédagogique & Fiches Enfants
+- **Dossier Athlète Personnalisé** : Fiche complète de chaque enfant (photo, âge, catégorie sportive, mensurations, antécédents).
+- **Évaluation Multidimensionnelle** : Notation par les coachs sur les compétences techniques, tactiques, l'assiduité et la condition physique.
+- **Historique Évolutif** : Visualisation sous forme de métriques de la progression au fil des mois.
+
+### 🤖 3. Assistant Intelligent Google Gemini AI
+- **Génération de Bilans Pédagogiques** : Grâce au modèle Google Gemini 1.5, l'application analyse les notes du coach pour rédiger automatiquement un bilan bienveillant, professionnel et personnalisé.
+- **Recommandations d'Entraînement** : Suggestions ciblées d'exercices à réaliser à la maison pour renforcer les points d'amélioration de l'enfant.
+
+### 📄 4. Export PDF & Notification par Email
+- **Moteur PDF Intégré (`PdfUtils`)** : Génération instantanée d'un rapport officiel haute résolution aux couleurs de l'académie SportyKids.
+- **Distribution Directe par Email** : Envoi en un clic du rapport PDF aux adresses email des parents via le service de messagerie intégré.
+
+### 💬 5. Communication Temps Réel & Appels
+- **Chat Instantané (Socket.IO)** : Discussions directes parents-entraîneurs avec confirmation de lecture, statut de frappe (*typing indicator*) et réactions.
+- **Appels Vocaux et Vidéo In-App (`CallActivity`)** : Passerelles d'appels intégrées avec gestion du microphone, haut-parleur et flux vidéo.
+- **Notifications Push (Firebase Cloud Messaging)** : Alertes instantanées pour les convocations, les changements de planning ou les messages urgents.
+
+### ⚽ 6. Gestion des Activités & Programmes
+- **Catalogue des Disciplines** : Football, Basketball, Natation, Tennis, Athlétisme, Gymnastique, etc.
+- **Planification des Séances** : Attribution des créneaux horaires, coachs référents et terrains d'entraînement.
+- **Localisation Cartographique (OSMDroid)** : Carte OpenStreetMap interactive pour repérer l'emplacement exact des terrains et stades.
+
+### 💳 7. Paiements & Abonnements Sécurisés
+- **Intégration Stripe Native** : Utilisation du composant officiel `PaymentSheet` pour un paiement carte bancaire rapide et conforme PCI-DSS.
+- **Gestion des Cotisations** : Règlement des forfaits mensuels, trimestriels ou des stages de vacances.
+- **Historique & Reçus** : Suivi de chaque transaction avec statut immédiat.
+
+### 📲 8. Widget Écran d'Accueil Android
+- **Jetpack Glance** : Widget interactif Material 3 installable sur l'écran d'accueil pour consulter en un coup d'œil les prochains cours et les notifications de l'académie.
 
 ---
 
-## 📂 Structure du Projet
+## 🏛️ Architecture Logicielle (MVVM Clean Architecture)
+
+Le projet respecte rigoureusement les préconisations officielles de Google pour Android :
+
+```mermaid
+graph TD
+    subgraph UI ["Couche Présentation (Jetpack Compose)"]
+        Screens[Écrans Compose] --> Components[Composants M3]
+        Screens --> Nav[Navigation Compose]
+    end
+
+    subgraph ViewModel ["Couche Métier (ViewModels)"]
+        VM[ViewModel] --> State[UI State / StateFlow]
+    end
+
+    subgraph Domain ["Couche Modèles & DTO"]
+        Models[Data Classes Kotlin]
+    end
+
+    subgraph Data ["Couche Données & Services"]
+        Repo[Repositories]
+        DS[DataStore Preferences]
+        Retrofit[Retrofit / OkHttp REST API]
+        Socket[Socket.IO Client Realtime]
+        FCM[Firebase Cloud Messaging]
+        Gemini[Google Generative AI SDK]
+        PDF[Moteur de génération PDF]
+    end
+
+    Screens --> VM
+    VM --> Repo
+    Repo --> Retrofit
+    Repo --> Socket
+    Repo --> DS
+    Repo --> Gemini
+    Repo --> PDF
+```
+
+---
+
+## 🛠️ Stack Technologique Complète
+
+| Domaine | Technologie / Bibliothèque | Version | Rôle & Usage |
+|---|---|---|---|
+| **Langage** | **Kotlin** | `2.0.21` | Langage principal, coroutines et typage strict |
+| **Toolchain** | **Java / JDK** | `17` | Environnement d'exécution Gradle & compilation Android |
+| **Android SDK** | **Target / Compile** | `API 34` (Android 14) | Min SDK `API 24` (Android 7.0+) |
+| **Framework UI** | **Jetpack Compose BOM** | `2024.10.00` | Interface déclarative réactive |
+| **Design System** | **Material 3** | `1.3.x` | Composants UI modernes et thémage sombre/clair |
+| **Navigation** | **Navigation Compose** | `2.7.7` | Graphe de navigation unifié |
+| **Réseau HTTP** | **Retrofit + OkHttp** | `2.9.0 / 4.12.0` | Client REST, convertisseur Gson, Logging Interceptor |
+| **WebSockets** | **Socket.IO Client** | `2.0.1` | Chat bidirectionnel et notifications temps réel |
+| **Intelligence Artificielle** | **Google Generative AI** | `0.9.0` | Intégration Gemini pour l'analyse des progrès |
+| **Paiement** | **Stripe Android SDK** | `21.5.0` | Intégration Stripe PaymentSheet |
+| **Cloud & Auth** | **Firebase BOM** | `32.7.0` | Auth, Firestore, Cloud Messaging (FCM), Analytics |
+| **Cartographie** | **OSMDroid Android** | `6.1.16` | Carte OpenStreetMap sans dépendance Google Maps payante |
+| **Imagerie** | **Coil Compose** | `2.6.0` | Chargement asynchrone d'images et mise en cache |
+| **Desktop Widget** | **Jetpack Glance** | `1.1.x` | Création de widgets d'écran d'accueil avec Compose |
+| **Stockage Local** | **DataStore Preferences** | `1.0.0` | Stockage sécurisé des tokens JWT et de la session |
+| **Documents** | **Android PdfDocument** | Natif | Création de fiches bilans sportives en PDF |
+
+---
+
+## 📂 Structure du Répertoire du Code
 
 ```text
 app/src/main/java/com/example/dam_front/
-├── DamApplication.kt          # Classe d'application globale (initialisations Firebase, Stripe, etc.)
-├── MainActivity.kt            # Point d'entrée principal avec configuration Compose Navigation
-├── api/                       # Définition des interfaces Retrofit (Auth, Tournois, Activités, etc.)
-├── network/                   # Client HTTP, intercepteurs JWT, configuration Retrofit & Socket.IO
-├── repository/                # Repositories orchestrant les appels réseau et le cache local
-├── viewmodels/                # ViewModels MVVM gérant l'état UI et les cas d'usage métier
-├── models/                    # Data classes Kotlin (User, Child, Tournament, Payment, Activity, etc.)
+├── DamApplication.kt                  # Initialisation applicative (Firebase, Stripe, notifications)
+├── MainActivity.kt                    # Point d'entrée avec gestion de navigation globale
+│
+├── api/                               # Interfaces de communication HTTP Retrofit
+│   ├── AuthApi.kt                     # Endpoints authentification, connexion et inscription
+│   ├── TournoisApi.kt                 # Gestion des tournois, brackets et inscriptions
+│   ├── ActivitiesApi.kt               # Gestion des activités sportives
+│   ├── ProgramsApi.kt                 # Gestion des programmes d'entraînement
+│   └── UserApi.kt                     # Profils utilisateurs et enfants
+│
+├── config/                            # Paramètres d'API et constantes serveur
+│   └── ApiConfig.kt                   # URLs de base (Android Emulator vs Device Réel)
+│
+├── network/                           # Gestionnaire réseau HTTP & WebSockets
+│   ├── RetrofitClient.kt              # Configuration OkHttp avec intercepteur JWT
+│   └── SocketManager.kt               # Gestionnaire des connexions Socket.IO
+│
+├── repository/                        # Abstraction de la logique de données (Clean Repositories)
+│   ├── AuthRepository.kt
+│   ├── TournoisRepository.kt
+│   ├── ChildRepository.kt
+│   ├── ActivitiesRepository.kt
+│   └── PaymentRepository.kt
+│
+├── viewmodels/                        # ViewModels MVVM orchestrant les états UI
+│   ├── AuthViewModel.kt
+│   ├── TournoisViewModel.kt
+│   ├── CoachHomeViewModel.kt
+│   ├── ParentHomeViewModel.kt
+│   ├── ActivitiesViewModel.kt
+│   └── ConversationViewModel.kt
+│
+├── models/                            # Modèles de données Kotlin (Entities & DTOs)
+│   ├── User.kt, Child.kt
+│   ├── Tournament.kt, Match.kt, Equipe.kt
+│   └── Payment.kt, Activity.kt, Program.kt
+│
 ├── ui/
-│   ├── screens/               # Écrans Compose (Tournois, Profils, Activités, Paiement, Chat, etc.)
-│   ├── components/            # Composants graphiques réutilisables (Boutons, Cartes, Dialogs, etc.)
-│   ├── navigation/            # Routes, graph d'écrans et BottomNavigationBar
-│   ├── theme/                 # Charte graphique (Couleurs, Typographie, Shapes Material 3)
-│   └── map/                   # Composants d'intégration de la carte OSMDroid
-├── services/                  # Services Android en arrière-plan (FirebaseMessagingService, etc.)
-├── utils/                     # Fonctions d'extension, constantes, formateurs de date/monnaie
-└── widget/                    # Implémentation du widget écran d'accueil avec Jetpack Glance
+│   ├── screens/                       # Plus de 40 écrans Compose complets
+│   │   ├── SignInScreen.kt / SignUpScreen.kt
+│   │   ├── ParentDashboardScreen.kt / MonEnfantScreen.kt
+│   │   ├── CoachHomeScreen.kt / CoachCreateSuiviScreen.kt
+│   │   ├── SuiviAiSummaryScreen.kt     # Écran bilan assisté par Gemini AI
+│   │   ├── TournoisListScreen.kt / MatchManagementScreen.kt
+│   │   ├── BracketParentScreen.kt     # Arbre interactif des tournois
+│   │   ├── ChatScreen.kt / ContactListScreen.kt
+│   │   └── ActivitiesListScreen.kt / ProgramDetailScreen.kt
+│   │
+│   ├── components/                    # Composants graphiques réutilisables (Cartes, Boutons, Badges)
+│   ├── navigation/                    # Graphes de routes et barres de navigation
+│   ├── theme/                         # Couleurs, Typographies et Formes Material 3
+│   └── map/                           # Intégration OSMDroid pour la cartographie
+│
+├── call/ & calls/                     # Module d'appels audio et vidéo
+│   ├── CallActivity.kt                # Activité dédiée aux appels temps réel
+│   └── CallScreens.kt                 # Interface d'appel (Mute, Haut-parleur, Vidéo)
+│
+├── email/                             # Client et DTOs d'envoi d'emails (bilans sportifs)
+│   ├── EmailRetrofitClient.kt
+│   └── EmailRequest.kt
+│
+├── services/                          # Services système Android (FCM Messaging, etc.)
+│   ├── MyFirebaseMessagingService.kt
+│   └── SuiviGeminiService.kt          # Intégration directe de l'API Google Gemini
+│
+├── utils/                             # Boîte à outils
+│   ├── PdfUtils.kt                    # Moteur de génération de bilans PDF SportyKids
+│   ├── TokenManager.kt                # Gestion du jeton d'authentification Bearer
+│   └── ImageUtils.kt / DateUtils.kt
+│
+└── widget/                            # Widget d'écran d'accueil avec Jetpack Glance
+    ├── SportyWidget.kt
+    └── SportyWidgetReceiver.kt
 ```
 
 ---
 
-## 🚀 Installation & Lancement
+## ⚡ Guide d'Installation & Prise en Main
 
-### Prérequis
-- **Android Studio** : Koala, Ladybug ou version plus récente
-- **JDK** : Version 17 (Java 17 requis pour Gradle et Android Gradle Plugin 8+)
-- **Android SDK** : 
-  - `compileSdk` : 34
-  - `minSdk` : 24 (Android 7.0 Nougat ou supérieur)
-  - `targetSdk` : 34 (Android 14)
-- **Émulateur Android ou Appareil physique** : avec les Google Play Services activés
+### 1. Prérequis Système
+- **Android Studio** : Version Hedgehog, Iguana, Koala ou Ladybug
+- **Java Development Kit (JDK)** : Version 17
+- **SDK Android** : Android SDK 34 (Android 14) installé via le SDK Manager
+- **Appareil cible** : Émulateur Android (ex: Pixel 7 avec Play Services) ou appareil physique sous Android 7.0+ avec débogage USB activé.
 
-### Étapes de Configuration
+### 2. Récupération du Code
+```bash
+git clone -b frontend-android https://github.com/hadilaroua/SportKids.git
+cd SportKids
+```
 
-1. **Cloner le dépôt et basculer sur la branche frontend** :
-   ```bash
-   git clone -b frontend-android https://github.com/hadilaroua/SportKids.git
-   cd SportKids
-   ```
+### 3. Configuration de Firebase
+- Placez votre fichier `google-services.json` généré depuis la console Firebase dans le répertoire `app/` du projet.
+- Assurez-vous que le package name correspond à : `com.example.dam_front`.
 
-2. **Configuration des Services Google & Firebase** :
-   - Assurez-vous que le fichier `google-services.json` est présent dans le dossier `app/`.
-   - Ce fichier contient la configuration de votre projet Firebase (Auth, Notifications FCM).
+### 4. Configuration de l'Adresse du Backend
+Ouvrez le fichier de configuration réseau `app/src/main/java/com/example/dam_front/config/ApiConfig.kt` (ou `RetrofitClient.kt`) et adaptez l'adresse selon votre environnement :
 
-3. **Configuration de l'URL du Backend** :
-   - Ouvrez le fichier de configuration réseau (ex. `com/example/dam_front/network/RetrofitClient.kt` ou `ApiConstants.kt`).
-   - Adaptez l'adresse IP de base :
-     - Pour un émulateur Android officiel : `http://10.0.2.2:3000/`
-     - Pour un appareil physique sur le même réseau Wi-Fi : `http://<VOTRE_IP_LOCALE>:3000/`
+```kotlin
+// Pour un émulateur Android Studio officiel (adresse pointant vers la machine hôte) :
+const val BASE_URL = "http://10.0.2.2:3000/"
 
-4. **Synchronisation du projet** :
-   - Ouvrez le projet dans Android Studio.
-   - Cliquez sur **File > Sync Project with Gradle Files**.
+// Pour un smartphone physique connecté au même réseau Wi-Fi :
+// const val BASE_URL = "http://192.168.1.XX:3000/"
+```
 
-5. **Exécution de l'application** :
-   - Sélectionnez un émulateur ou votre appareil cible.
-   - Cliquez sur **Run 'app'** (`Shift + F10`).
+### 5. Compilation & Lancement
+1. Ouvrez le projet dans Android Studio.
+2. Effectuez une synchronisation Gradle : **File > Sync Project with Gradle Files**.
+3. Lancez l'application en cliquant sur le bouton vert **Run 'app'** (`Shift + F10`).
 
 ---
 
-## 🤝 Contribution & Bonnes Pratiques
+## 🔒 Sécurité & Bonnes Pratiques
 
-- **Formatage du code** : Respectez les conventions officielles de Kotlin (`ktlint` / style standard Android).
-- **Gestion des branches** : Créez des branches thématiques (`feature/nom-fonctionnalite` ou `fix/nom-bug`) basées sur `frontend-android`.
-- **Commits conventionnels** : Utilisez les préfixes standard (`feat:`, `fix:`, `refactor:`, `docs:`, `style:`).
+- **Authentification JWT** : Chaque requête aux API protégées est enrichie avec le token Bearer via un `OkHttp Interceptor`.
+- **Règles Proguard / R8** : Obfuscation et minification configurées pour protéger les clés et les modèles en mode Release.
+- **Conformité des Paiements** : Aucune donnée de carte bancaire ne transite par les serveurs de l'académie ; le flux est délégué directement aux serveurs sécurisés de Stripe.
+- **Protection des Secrets** : Les clés privées et fichiers d'environnement sont exclus du suivi Git via `.gitignore`.
 
 ---
 
-## 📄 Licence
+## 👨‍💻 Auteurs & Équipe
 
-Ce projet est réalisé dans le cadre du projet **SportKids**. Tous droits réservés.
+Développé avec passion pour moderniser le sport chez les jeunes athlètes.
+
+- **Dépôt GitHub** : [hadilaroua/SportKids](https://github.com/hadilaroua/SportKids.git)
+- **Branche Frontend** : [`frontend-android`](https://github.com/hadilaroua/SportKids/tree/frontend-android)
+- **Branche Backend** : [`backend-android`](https://github.com/hadilaroua/SportKids/tree/backend-android)
+
+---
+
+<p align="center">
+  <sub>SportKids © 2026 – Tous droits réservés.</sub>
+</p>
