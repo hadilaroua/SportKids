@@ -12,7 +12,9 @@ object ApiConfig {
     const val SOCKET_URL = "https://sprotifkids.onrender.com/"
 
     // AI Configuration
-    const val GEMINI_API_KEY = "AIzaSyD2DJR5tf848ejV4Hv_MEWeUNkbPbpGgao"
+    // ⚠️ Set your Gemini API key in local.properties: GEMINI_API_KEY=your_key_here
+    // Then expose it via BuildConfig (see README for setup instructions)
+    const val GEMINI_API_KEY = BuildConfig.GEMINI_API_KEY
 }
 
 

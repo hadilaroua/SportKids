@@ -484,9 +484,10 @@ fun ChildSelectionScreen(
                                                     try {
                                                         // 2. Initialize Payment Configuration
                                                         android.util.Log.d("PaymentFlow", "Initializing Stripe configuration...")
+                                                        // ⚠️ Set STRIPE_PUBLISHABLE_KEY in local.properties
                                                         PaymentConfiguration.init(
-                                                            context, 
-                                                            "pk_test_51SYrsQ9Ze2kfHWLpISczxhH1OFnBHFICnCVAomayaVIeacdMurBBhQGq5nSSR1SjLR6c0CDRtBdv7VIvuw6N1xga00IaSFXKag"
+                                                            context,
+                                                            BuildConfig.STRIPE_PUBLISHABLE_KEY
                                                         )
                                                         
                                                         // 3. Present Payment Sheet with Custom Styling

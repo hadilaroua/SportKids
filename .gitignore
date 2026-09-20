@@ -14,3 +14,10 @@
 .cxx
 local.properties
 .kotlin/
+
+# Firebase - contains API keys, do NOT commit
+app/google-services.json
+
+# Local secrets
+*.env
+.env.local
